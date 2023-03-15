@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            let myObj = {
+            name : "Harry",
+            age : 10
+            };
+            // localStorage.setItem('myObj', myObj);
+            // console.log(localStorage);
+            // console.log('HI');
+             let myObj_serial = JSON.stringify(myObj);
+             localStorage.setItem("myObj", myObj_serial);
+            // console.log(myObj_serial);
+            // console.log('wassup');
+            let myObj_deserial = JSON.parse(localStorage.getItem("myObj"));
+            console.log(myObj_deserial);
+        </script>
+    </body>
+</html>
+
