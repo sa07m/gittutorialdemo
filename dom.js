@@ -55,5 +55,10 @@ function filterFunc(e)
     
     }
         
+var a = document.querySelector('h2')
+a.style.color = "brown"
+a.style.fontWeight   = 'bold'
 
+var last = document.querySelector('.list-group : last-child')
+last.style.color = 'brown'
 
